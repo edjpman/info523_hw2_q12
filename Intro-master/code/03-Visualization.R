@@ -4,6 +4,7 @@
 library(ggplot2)
 # library(hexbin)
 
+# Using the built in iris dataset
 plot(iris$Sepal.Width, iris$Sepal.Length)
 
 qplot(Sepal.Width, Sepal.Length, data = iris)
@@ -14,6 +15,7 @@ qplot(Sepal.Width, Sepal.Length, data = iris, color = Species, shape = Species, 
 
 # Diving in: Scatterplots
 
+# ggplot is one of the most comprehensive data visualization libraries
 install.packages("ggplot2")
 library(ggplot2)
 ?mpg
@@ -61,6 +63,7 @@ qplot(reorder(class, hwy, FUN = median), hwy, data = mpg, geom = "boxplot")
 # Diamonds
 
 # Bar charts
+# Bar charts can be very effective for displaying categorical data
 
 # Your Turn
 # --------------------------
